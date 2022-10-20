@@ -52,10 +52,15 @@ void Board::SetCell(Vec2<int> pos, Color c)
 
 void Board::DrawCell(Vec2<int> pos) const
 {
+	Color color = cells[pos.GetY() * width + pos.GetX()].GetColor();
+	DrawCell(pos, color);
+}
+
+void Board::DrawCell(Vec2<int> pos, Color color) const
+{
 	assert(pos.GetX() >= 0, pos.GetX() < width && pos.GetY() >= 0, pos.GetY() < height);
-	Color c = cells[pos.GetY() * width + pos.GetX()].GetColor();
 	Vec2<int> topLeft = { screenPos + padding + (pos * cellSize) };
-	raycpp::DrawRectangle(topLeft, Vec2<int>{ cellSize, cellSize } - padding, c);
+	raycpp::DrawRectangle(topLeft, Vec2<int>{ cellSize, cellSize } - padding, color);
 }
 
 void Board::DrawBorder() const

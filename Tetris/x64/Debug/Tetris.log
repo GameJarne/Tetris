@@ -1,7 +1,2 @@
-﻿  Board.cpp
-C:\Users\katpo\Documents\C++\Tetris\Tetris\Board.cpp(55,2): warning C4002: too many arguments for function-like macro invocation 'assert'
-  main.cpp
-  Game.cpp
-  Tetrominoes.cpp
-  Generating Code...
-  Tetris.vcxproj -> C:\Users\katpo\Documents\C++\Tetris\x64\Debug\Tetris.exe
+﻿  Tetrominoes.cpp
+C:\Users\katpo\Documents\C++\Tetris\Tetris\Tetrominoes.cpp(89,2): error C3861: 'WaitSeconds': identifier not found

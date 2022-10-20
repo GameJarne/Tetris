@@ -17,5 +17,5 @@ void raycpp::DrawRectangleLinesEx(Vec2<int> pos, Vec2<int> widthHeight, int line
 		(float) pos.GetY(),
 		(float) widthHeight.GetX(),
 		(float) widthHeight.GetY()},
-		lineThick, color);
+		(float)lineThick, color);
 }

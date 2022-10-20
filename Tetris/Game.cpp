@@ -37,6 +37,22 @@ void Game::Tick()
 
 void Game::Update()
 {
+	if (IsKeyPressed(KEY_E))
+	{
+		tetromino.RotateClockwise();
+	}
+	if (IsKeyPressed(KEY_Q))
+	{
+		tetromino.RotateCounterClockwise();
+	}
+	if (IsKeyPressed(KEY_LEFT))
+	{
+		tetromino.MoveLeft();
+	}
+	if (IsKeyPressed(KEY_RIGHT))
+	{
+		tetromino.MoveRight();
+	}
 }
 
 void Game::Draw()
