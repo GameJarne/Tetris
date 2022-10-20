@@ -139,12 +139,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="raylibCPP.cpp" />
+    <ClCompile Include="Tetrominoes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="raylibCPP.h" />
     <ClInclude Include="Settings.h" />
+    <ClInclude Include="Tetrominoes.h" />
     <ClInclude Include="Vec2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

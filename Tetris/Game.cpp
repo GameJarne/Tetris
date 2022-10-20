@@ -2,23 +2,18 @@
 #include "Game.h"
 #include "raylibCpp.h"
 #include "Settings.h"
+
 Game::Game(int width, int height, int fps, std::string title)
 	:
 	board(settings::boardPosition,
 		settings::boardWidthHeight,
 		settings::cellSize,
-		settings::padding)
+		settings::padding),
+	tetromino(board)
 {
 	assert(!GetWindowHandle());	//If assertion triggers : Window is already opened
 	SetTargetFPS(fps);
 	InitWindow(width, height, title.c_str());
-	for (int iY = 0; iY < 20; ++iY)
-	{
-		for (int iX = 0; iX < 10; ++iX)
-		{
-			board.SetCell({ iX,iY }, RAYWHITE);
-		}
-	}
 }
 
 Game::~Game() noexcept
@@ -48,4 +43,5 @@ void Game::Draw()
 {
 	ClearBackground(DARKGRAY);
 	board.Draw();
+	tetromino.Draw();
 }
