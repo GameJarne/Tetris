@@ -1,16 +1,18 @@
 #include "Game.h"
 #include "Settings.h"
-
 int main(void)
 {
-    Game game{ settings::boardWidthHeight.GetX(), // screen width
-        settings::boardWidthHeight.GetY(), // screen height
-        settings::fps, // fps
-        "Tetris Raylib" }; // window name
+    // Initialization
+    //--------------------------------------------------------------------------------------
+
+    Game game{settings::screenWidth,
+              settings::screenHeight,
+              settings::fps,
+              "Tetris Raylib"};
 
     while (!game.GameShouldClose())
     {
-       game.Tick();
+        game.Tick();
     }
     return 0;
 }

@@ -1,7 +1,2 @@
-﻿  Board.cpp
-C:\Users\katpo\Documents\C++\Tetris\Tetris\Board.cpp(50,2): warning C4002: too many arguments for function-like macro invocation 'assert'
-  Game.cpp
-  main.cpp
-  raylibCPP.cpp
-  Generating Code...
+﻿  Game.cpp
   Tetris.vcxproj -> C:\Users\katpo\Documents\C++\Tetris\x64\Debug\Tetris.exe

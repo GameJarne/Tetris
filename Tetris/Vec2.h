@@ -11,10 +11,10 @@ public:
 		y(y)
 	{};
 
-	T GetX() const { return x; };
-	T GetY() const { return y; };
-	void SetX(T x_in) { x = x_in; };
-	void SetY(T y_in) { y = y_in; };
+	constexpr T GetX() const { return x; };
+	constexpr T GetY() const { return y; };
+	constexpr void SetX(T x_in) { x = x_in; };
+	constexpr void SetY(T y_in) { y = y_in; };
 
 public:
 	constexpr bool operator==(const Vec2& rhs) const
